@@ -1,33 +1,8 @@
 @media (min-width: 1199px) {
-    .com-bor-btn,
-    .cmn-btn-red {
-        padding: 10px 30px;
-    }
-    .home-slider.owl-theme .owl-dots {
-        left: 16%;
-    }
-    .h-banner {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 97%);
-           min-height: calc(100vh - 90px);
-    }
-    .h-banner .banner-title {
-        font-size: 70px;
-    }
-    .about-des{
-        padding-left: 50px;
-    }
+    
 }
 
 @media (min-width: 992px) and (max-width: 1367px) {
-    .home-slider.owl-theme .owl-dots {
-        left: 10%;
-    }
-    .t18 {
-        font-size: 15px;
-    }
-    .price-wrap label {
-        font-size: 15px;
-    }
 
  
     
@@ -42,62 +17,17 @@
 /* Tablet Layout: 768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .com-bor-btn,
-    .cmn-btn-red {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-    .title {
-        font-size: 16px;
-    }
-    .s-heading {
-        font-size: 30px;
-    }
+   
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
-    /* common css */
-    /* home-slider */
-    .banner-heading {
-        padding-left: 45px;
-    }
+    
 }
 
 
 /* Mobile Layout: 320px. */
 
-@media (max-width: 767px) {
-    .com-bor-btn,
-    .cmn-btn-red {
-        font-size: 13px;
-    }
-    .t18,
-    .title {
-        font-size: 15px;
-    }
-    .s-heading {
-        font-size: 22px;
-    }
-    .single-comic {
-        padding: 20px 20px;
-    }
-    .sec-margin-top {
-        margin-top: 30px;
-    }
-    /* fav book */
-    .fav-book .fav-content .book-title {
-        position: relative;
-        margin-top: -35px;
-    }
-
-    /* .single-comic */
-    .slick-prev {
-        left: 8px;
-    }
-    .slick-next {
-        right: 8px;
-    }
-}
+@media (max-width: 767px){}
 
 
 /* Wide Mobile Layout: 480px. */
