@@ -1061,11 +1061,15 @@ p {
     text-align: center;
     color: var(--white);
     border-radius: 10px;
-    max-height: 42px;
 }
 .cmn-btn span{
     margin-right: 6px;
 }
+.cmn-btn img{
+    width: 20px;
+    height: 20px;
+}
+.cmn-btn:focus,
 .cmn-btn:hover{
     color: var(--white);
 }
@@ -1093,7 +1097,7 @@ p {
     z-index: 111;
 }
 
-.logo > img{
+.logo a > img{
     max-width: 80px;
     height: 80px;
 }
@@ -1190,7 +1194,7 @@ p {
     height: 42px;
     transition: background-color .3s cubic-bezier(.165,.84,.44,1);
     color: #fff;
-    line-height: 1;
+    line-height: 0;
     position: absolute;
     right: 9px;
     bottom: 6px;
