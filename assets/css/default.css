@@ -1096,7 +1096,9 @@ p {
     transform: translate(-50%, -50%);
     z-index: 111;
 }
-
+.logo{
+    display: inline-block;
+}
 .logo a > img{
     max-width: 80px;
     height: 80px;

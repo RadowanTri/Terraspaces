@@ -37,8 +37,12 @@
     .pt-40 {
         padding-top: 30px;
     }
+    .logo a > img{
+        max-width: 60px;
+        height: 60px;
+    }
 
-    
+
 
     /* mint responsive */
     .mint-wrapper {
