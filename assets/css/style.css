@@ -338,7 +338,7 @@ filter: blur(300px); */
 }
 .partner-carousel.owl-carousel .owl-item.active img {
 
-    transform: scale(.7, .7);
+    transform: scale(.8, .8);
     
 }
 

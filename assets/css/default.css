@@ -1240,7 +1240,10 @@ p {
 
 
 /* header css */
-
+.hedaer-abs {
+    position: relative;
+    z-index: 1030;
+}
 .fixed-nav {
     position: fixed;
     top: 0;

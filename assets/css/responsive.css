@@ -92,6 +92,10 @@
 
 @media (min-width: 320px) and (max-width: 991px) {
     /* font-size */
+    br{
+        display: none;
+    }
+
     
     /* font-size */
     .section-heading{
@@ -117,12 +121,20 @@
     .flex-d {
         gap: 8px;
     }
+    .before-srarting-img> ul >li {
+        padding-left: 30px;
+        margin: 13px 0px;
+        font-size: 14px;
+    }
     .logo img {
         max-width: 60px;
         height: 60px;
     }
 
     /* homepage responsive */
+    .home-page {
+        padding-top: 100px;
+    }
     .powered-icon> img{
         max-width: 80px;
     }
@@ -153,6 +165,10 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+    .track-select .btn:focus, 
+    .track-select .btn {
+        font-size: 15px;
+    }
 
     /* mint responsive */
     .mint-wrapper {
@@ -165,11 +181,22 @@
 
 
     /* header-responsive */
-    .header-area  .navbar-nav {
-        padding-top: 15px;
+    .hedaer-abs {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        box-shadow: 0 13px 22px -5px rgb(0 0 0 / 6%);
+        padding: .3rem 0rem !important;
+        background: #10192D;
+        transition: all .3s;
+    }
+    .header-area  .navbar {
+        padding: 0px;
     }
     .header-area .navbar-nav li {
-        margin-right: 0px;
+        margin-right: 15px;
         margin-bottom: 15px;
     }
     .header-area .navbar-toggler {
@@ -246,10 +273,22 @@
 
 /* Wide Mobile Layout: 480px. */
 
-@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 576px) and (max-width: 767px) {
+    .d-grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 575px) {
     .f-row-reverse {
         flex-direction: column-reverse;
     }
+    .section-heading {
+        font-size: 30px;
+    }
+    .dash-info .d-grid-2 {
+        gap: 0px;
+    }
+    
 }
