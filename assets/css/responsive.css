@@ -108,6 +108,10 @@
     .t-30 {
         font-size: 25px;
     }
+    .t-18 {
+        font-size: 16px;
+        line-height:1.5;
+    }
     .t-20 {
         font-size: 17px;
     }
@@ -115,7 +119,7 @@
         font-size: 14px;
     }
     .cmn-btn {
-        font-size: 14px;
+        font-size: 15px;
         padding: 8px 13px;
         
     }
