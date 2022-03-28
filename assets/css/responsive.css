@@ -1,26 +1,21 @@
 @media (min-width: 1199px) {
-    .d-grid-5{
-        gap: 25px;
+    .d-grid-5 {
+        gap: 30px;
     }
-    .cont-top-space{
+    .cont-top-space {
         margin-top: 50px;
     }
-    
     .sec-padding-top {
-        padding-top: 120px;
+        padding-top: 150px;
     }
     .header-area #navbarSupportedContent {
         margin-left: 50px;
-    }   
-    .header-area .cmn-btn span {
-        margin-right: 15px;
     }
-    .header-area .navbar-brand{
+    .header-area .navbar-brand {
         padding: 0px;
     }
-
     /* homepage */
-    .hero-area  .powered-icon {
+    .hero-area .powered-icon {
         padding: 0px 20px;
     }
     .hero-area .hero-title h1 {
@@ -28,52 +23,42 @@
         line-height: 100%;
     }
     .hero-area .hero-d-p {
-        padding-top: 25px;
-        padding-bottom: 35px;
+        padding-top: 20px;
+        padding-bottom: 42px;
     }
     .hero-area .popup-videos img {
         max-width: 165px;
     }
     /* terraspace-wrapper */
-    .terraspace-wrapper{
-        margin-top: 80px;
+    .terraspace-wrapper {
+        margin-top: 90px;
     }
-    .terraspace-wrapper .t-single-description h2{
+    .terraspace-wrapper .t-single-description h2 {
         padding-top: 15px;
         padding-bottom: 35px;
     }
-    .terraspace-wrapper .t-single-description{
+    .terraspace-wrapper .t-single-description {
         padding: 28px;
     }
-
     /* dashboard */
-   
-    .tranding-wrapper .range-btn{
+    .tranding-wrapper .range-btn {
         margin-top: 35px;
     }
     /* partner wrapper */
-
-    
     .partner-wrapper {
-        padding-bottom: 140px;
+        padding-bottom: 250px;
     }
-    .partnet-s-title p{
+    .partnet-s-title p {
         padding-top: 25px;
         padding-bottom: 60px;
     }
-
     /* .fixed-nav .logo img{
         max-width: 60px;
         height: 60px;
     } */
-  
 }
 
-@media (min-width: 992px) and (max-width: 1367px) {
-
- 
-    
-}
+@media (min-width: 992px) and (max-width: 1367px) {}
 
 
 /* Medium Layout: 1280px. */
@@ -87,18 +72,15 @@
     .header-area #navbarSupportedContent {
         margin-left: 15px;
     }
-   
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
     /* font-size */
-    br{
+    br {
         display: none;
     }
-
-    
     /* font-size */
-    .section-heading{
+    .section-heading {
         font-size: 35px;
     }
     .t-36 {
@@ -110,7 +92,7 @@
     }
     .t-18 {
         font-size: 16px;
-        line-height:1.5;
+        line-height: 1.5;
     }
     .t-20 {
         font-size: 17px;
@@ -118,18 +100,17 @@
     .t-16 {
         font-size: 14px;
     }
-    .cmn-btn {
+    /* .cmn-btn {
         font-size: 15px;
         padding: 8px 13px;
-        
-    }
+    } */
     .pt-40 {
         padding-top: 30px;
     }
     .flex-d {
         gap: 8px;
     }
-    .before-srarting-img> ul >li {
+    .before-srarting-img>ul>li {
         padding-left: 30px;
         margin: 13px 0px;
         font-size: 14px;
@@ -138,7 +119,9 @@
         max-width: 60px;
         height: 60px;
     }
-
+    /* .t-single-img img {
+        width: 100%;
+    } */
     /* homepage responsive */
     .hero-area .hero-title h1 {
         font-size: 34px;
@@ -146,26 +129,26 @@
     .home-page {
         padding-top: 100px;
     }
-    .powered-icon> img{
+    .powered-icon>img {
         max-width: 80px;
     }
-    .powered-icon .popup-videos img{
+    .powered-icon .popup-videos img {
         max-width: 140px;
     }
-    .t-middle-wrapper img{
+    .t-middle-wrapper img {
         margin-bottom: 30px;
     }
-
     /* .table */
     .tranding-wrapper .table thead th,
-     .tranding-wrapper .table thead h5 {
+    .tranding-wrapper .table thead h5 {
         font-size: 14px !important;
-
     }
-    .tranding-wrapper .table tbody th, .tranding-wrapper .table-f span, .tranding-wrapper .table-f p {
+    .tranding-wrapper .table tbody th,
+    .tranding-wrapper .table-f span,
+    .tranding-wrapper .table-f p {
         font-size: 13px !important;
     }
-    .tranding-wrapper .table tr td, 
+    .tranding-wrapper .table tr td,
     .tranding-wrapper .table tr th {
         text-align: center;
         white-space: nowrap;
@@ -176,7 +159,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .track-select .btn:focus, 
+    .track-select .btn:focus,
     .track-select .btn {
         font-size: 15px;
     }
@@ -184,19 +167,14 @@
         padding-top: 15px;
         padding-bottom: 20px;
     }
-    
-  
-
     /* mint responsive */
     .mint-wrapper {
         padding-top: 25px;
         padding-bottom: 90px;
     }
-    .mint-info [class*="pb-"]{
+    .mint-info [class*="pb-"] {
         padding-bottom: 12px;
     }
-
-
     /* header-responsive */
     .hedaer-abs {
         position: fixed;
@@ -209,8 +187,11 @@
         background: #10192D;
         transition: all .3s;
     }
-    .header-area  .navbar {
+    .header-area .navbar {
         padding: 0px;
+    }
+    .header-area .navbar .cmn-btn {
+        margin-right: 8px;
     }
     .header-area .navbar-nav li {
         margin-right: 15px;
@@ -238,28 +219,27 @@
     .header-area .navbar-toggler[aria-expanded="false"] .fa-times {
         display: none;
     }
-
-
     /* footer responsive */
-    .footer-top .row > [class*="col-"] {
+    .footer-top .row>[class*="col-"] {
         margin-bottom: 25px;
     }
-    .footer-top .row > [class*="col-"] .pb-15 {
+    .footer-top .row>[class*="col-"] .pb-15 {
         padding-bottom: 10px;
     }
-    .footer-wrapper .f-subscribe, .footer-wrapper .f-social-link {
+    .footer-wrapper .f-subscribe,
+    .footer-wrapper .f-social-link {
         padding-top: 15px;
     }
     .footer-wrapper {
         padding-top: 50px;
     }
-    .footer-wrapper .f-title > h3 {
+    .footer-wrapper .f-title>h3 {
         font-size: 17px;
         line-height: 1.5;
     }
     .footer-wrapper .f-paragraph p {
         font-size: 14px;
-        line-height:1.5
+        line-height: 1.5
     }
     .footer-wrapper .resources .res-link li {
         padding-bottom: 3px;
@@ -279,20 +259,26 @@
         padding-top: 20px;
         padding-bottom: 15px;
     }
-    
 }
 
 
 /* Mobile Layout: 320px. */
 
-@media (max-width: 767px){
-    .icons-f, .videos-icon {
+@media (max-width: 767px) {
+    .icons-f,
+    .videos-icon {
         height: 35px;
         width: 35px;
     }
     .videos-icon i {
         font-size: 16px
     }
+    .header-area .navbar .navbar-brand {
+        margin-right: 0px;
+    }
+      .partner-wrapper {
+          padding-bottom: 150px;
+      }
 }
 
 
@@ -308,10 +294,7 @@
     .f-row-reverse {
         flex-direction: column-reverse;
     }
-    .cmn-btn img {
-        width: 17px;
-        height: 17px;
-    }
+
     .t-20 {
         font-size: 16px;
     }
@@ -337,9 +320,34 @@
     .track-select.f-right {
         padding-top: 10px;
     }
-    .partner-wrapper {
-        padding-bottom: 80px;
+  
+    .stak-img>img {
+        max-width: 230px;
+        height: auto;
     }
-    
-    
+    .tracker-wrapper .d-grid-5 {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .tracker-wrapper .single-tracker {
+        width: 180px;
+        height: 232px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+    .tracker-wrapper .d-grid-5 {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .tracker-wrapper .single-tracker {
+        width: 160px;
+        height: 230px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer-wrapper .copyright {
+        display: block;
+        text-align: center;
+    }
 }

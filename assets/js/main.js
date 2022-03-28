@@ -10,6 +10,16 @@ $(document).ready(function($) {
             $("#header").removeClass("fixed-nav");
         }
     });
+
+    // hover
+    $('.navbar-nav .nav-link').hover(
+    function(){ 
+    $(".navbar-nav .nav-link.active").addClass('inactive').removeClass('active');
+    },
+    function(){ 
+    $(".navbar-nav .nav-link.inactive").addClass('active').removeClass('inactive'); 
+    }
+    );
     // partner slider
 
     var $partnerSlider = $(".partner-carousel");
@@ -17,26 +27,26 @@ $(document).ready(function($) {
         center: true,
         nav: true,
         navText: [
-            '<i class="fas fa-long-arrow-alt-left"></i>',
-            '<i class="fas fa-long-arrow-alt-right"></i>',
+            '<i class="fa-solid fa-arrow-left-long"></i>',
+            '<i class="fa-solid fa-arrow-right-long"></i>',
         ],
-        dots:false,
+        dots: false,
         autoplay: false,
-          loop:true,
-          responsive:{
-              0:{
-                  items:1,
-              },
-              600:{
-                  items:1,
-              },
-              992:{
-                  items:3,
-              },
-              1399:{
-                  items:3,
-              }
-          }
+        loop: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            992: {
+                items: 3,
+            },
+            1399: {
+                items: 3,
+            }
+        }
     });
 
     // Magnific popup
@@ -55,7 +65,7 @@ $(document).ready(function($) {
             srcAction: 'iframe_src',
         }
     });
-   
+
 
 
 
