@@ -1009,9 +1009,11 @@ p {
 }
 
 .sec-padding-top {
-    padding-top: 50px;
+    padding-top: 60px;
 }
-
+.cont-top-space{
+    margin-top: 35px;
+}
 .sec-margin-top {
     margin-top: 40px;
 }

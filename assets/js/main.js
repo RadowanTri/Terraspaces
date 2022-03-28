@@ -11,29 +11,32 @@ $(document).ready(function($) {
         }
     });
     // partner slider
-    var $partnerSlider = $(".partner-slider");
+
+    var $partnerSlider = $(".partner-carousel");
     $partnerSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: true,
-        autoplayTimeout: 7000,
-        smartSpeed: 5000,
+        center: true,
+        nav: true,
+        navText: [
+            '<i class="fas fa-long-arrow-alt-left"></i>',
+            '<i class="fas fa-long-arrow-alt-right"></i>',
+        ],
+        dots:false,
         autoplay: false,
-        margin: 30,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 2,
-            },
-            1399: {
-                items: 3,
-            },
-        }
+          loop:true,
+          responsive:{
+              0:{
+                  items:1,
+              },
+              600:{
+                  items:1,
+              },
+              992:{
+                  items:3,
+              },
+              1399:{
+                  items:3,
+              }
+          }
     });
 
     // Magnific popup
@@ -45,7 +48,7 @@ $(document).ready(function($) {
                     index: 'youtube.com/',
 
                     id: 'v=',
-                    src: 'http://www.youtube.com/embed/%id%?autoplay=1'
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                 }
 
             },
