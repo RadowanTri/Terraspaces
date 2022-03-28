@@ -336,9 +336,10 @@ filter: blur(300px); */
     position: relative;
     border-radius: 35px;
 }
+
 .partner-carousel.owl-carousel .owl-item.active img {
 
-    transform: scale(.8, .8);
+    transform: scale(.9, .9);
     
 }
 
