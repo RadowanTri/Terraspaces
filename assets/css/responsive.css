@@ -1,5 +1,50 @@
 @media (min-width: 1199px) {
-    
+    .d-grid-5{
+        gap: 25px;
+    }
+    .header-area #navbarSupportedContent {
+        margin-left: 50px;
+    }   
+    .header-area .cmn-btn span {
+        margin-right: 15px;
+    }
+    .header-area .navbar-brand{
+        padding: 0px;
+    }
+
+    /* homepage */
+    .hero-area  .powered-icon {
+        padding: 0px 20px;
+    }
+    .hero-area .hero-title h1 {
+        font-size: 70px;
+        line-height: 100%;
+    }
+    .hero-area .hero-d-p {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    .hero-area .popup-videos img {
+        max-width: 165px;
+    }
+    /* terraspace-wrapper */
+    .terraspace-wrapper{
+        margin-top: 100px;
+    }
+    .terraspace-wrapper .t-single-description h2{
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+    .terraspace-wrapper .t-single-description{
+        padding: 28px;
+    }
+
+
+    /* .fixed-nav .logo img{
+        max-width: 60px;
+        height: 60px;
+    } */
+  
 }
 
 @media (min-width: 992px) and (max-width: 1367px) {
@@ -17,11 +62,19 @@
 /* Tablet Layout: 768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .header-area #navbarSupportedContent {
+        margin-left: 15px;
+    }
    
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
     /* font-size */
+    
+    /* font-size */
+    .section-heading{
+        font-size: 35px;
+    }
     .t-30 {
         font-size: 25px;
     }
@@ -33,16 +86,51 @@
     }
     .cmn-btn {
         font-size: 14px;
+        padding: 8px 13px;
+        
     }
     .pt-40 {
         padding-top: 30px;
     }
-    .logo a > img{
+    .flex-d {
+        gap: 8px;
+    }
+    .logo img {
         max-width: 60px;
         height: 60px;
     }
 
+    /* homepage responsive */
+    .powered-icon> img{
+        max-width: 80px;
+    }
+    .powered-icon .popup-videos img{
+        max-width: 140px;
+    }
+    .t-middle-wrapper img{
+        margin-bottom: 30px;
+    }
 
+    /* .table */
+    .tranding-wrapper .table thead th,
+     .tranding-wrapper .table thead h5 {
+        font-size: 14px !important;
+
+    }
+    .tranding-wrapper .table tbody th, .tranding-wrapper .table-f span, .tranding-wrapper .table-f p {
+        font-size: 13px !important;
+    }
+    .tranding-wrapper .table tr td, 
+    .tranding-wrapper .table tr th {
+        text-align: center;
+        white-space: nowrap;
+    }
+    .table-f.flex-d {
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 
     /* mint responsive */
     .mint-wrapper {
@@ -52,6 +140,40 @@
     .mint-info [class*="pb-"]{
         padding-bottom: 12px;
     }
+
+
+    /* header-responsive */
+    .header-area  .navbar-nav {
+        padding-top: 15px;
+    }
+    .header-area .navbar-nav li {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .header-area .navbar-toggler {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: transparent;
+        color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 1px 5px #39f;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .header-area .navbar-toggler[aria-expanded="true"] .fa-bars {
+        display: none;
+    }
+    .header-area .navbar-toggler[aria-expanded="false"] .fa-bars {
+        display: block;
+    }
+    .header-area .navbar-toggler[aria-expanded="true"] .fa-times {
+        display: block;
+    }
+    .header-area .navbar-toggler[aria-expanded="false"] .fa-times {
+        display: none;
+    }
+
+
     /* footer responsive */
     .footer-top .row > [class*="col-"] {
         margin-bottom: 25px;

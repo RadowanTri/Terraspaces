@@ -3,10 +3,16 @@ $(document).ready(function($) {
     $("[data-background").each(function() {
         $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
     });
-
-    // Banner slider
-    var $companiesSlider = $(".home-slider");
-    $companiesSlider.owlCarousel({
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 50) {
+            $("#header").addClass("fixed-nav");
+        } else {
+            $("#header").removeClass("fixed-nav");
+        }
+    });
+    // partner slider
+    var $partnerSlider = $(".partner-slider");
+    $partnerSlider.owlCarousel({
         loop: true,
         nav: false,
         dots: true,
@@ -19,13 +25,13 @@ $(document).ready(function($) {
                 items: 1,
             },
             768: {
-                items: 1,
+                items: 2,
             },
             992: {
-                items: 1,
+                items: 2,
             },
             1399: {
-                items: 1,
+                items: 3,
             },
         }
     });

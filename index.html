@@ -26,7 +26,7 @@
 
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="hedaer-abs">
         <div class="header-area">
             <nav class="navbar navbar-expand-md">
                 <div class="container">
@@ -35,10 +35,15 @@
                         <i class="fas fa-times"></i>
                     </button>
 
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/h-logo.png" alt="logo">
+                    <a class="navbar-brand logo" href="index.html">
+                        <img src="assets/img/logo/logo.png" alt="logo" loading="lazy">
                     </a>
-
+                    <div class="d-block d-md-none login-b">
+                        <a href="javascript:void(0)" class="cmn-btn">
+                            <span> Wallet</span>
+                            <img src="assets/img/icons/wallet.png" alt="wallet">
+                        </a>
+                    </div>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
@@ -61,12 +66,11 @@
 
                     </div>
 
-                    <div class="ms-auto">
-                        
-                            <a href="javascript:void(0)" class="cmn-btn">
-                                <span>Wallet</span>
-                            </a>
-                        
+                    <div class="d-none d-md-block  ms-auto">
+                        <a href="javascript:void(0)" class="cmn-btn">
+                            <span > Wallet</span>
+                            <img class="pl-2" src="assets/img/icons/wallet.png" alt="wallet">
+                        </a>
                     </div>
 
                 </div>
@@ -74,69 +78,698 @@
         </div>
 
     </header>
-    <!-- <div>
-        <svg  viewBox="0 0 1440 3680" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_f_335_2219)">
-            <path d="M1098.47 700.327C1137.93 532.081 1246.25 259.871 1107.56 189.282C750.765 7.61972 282.321 443.027 125.4 1255.34C97.5789 1399.32 70.7083 1578.23 76.9008 1741.47C86.3245 1989.86 177.82 1999.25 264.184 2024.56C354.089 2050.92 445.265 2021.67 531.839 1961.99C714.03 1836.36 896.492 1565.41 1091.44 1578.66C1304.47 1593.14 1299.79 2127.7 1168.44 2399.27C1058.35 2626.87 903.405 2778.88 762.94 2859.04C730.747 2877.41 664.481 2943.54 634.519 2884.69C582.659 2782.83 673.074 2593.09 703.236 2528.45C815.01 2288.95 975.443 2174.16 1123.88 2247.14C1238.19 2303.34 1380.22 2535.92 1344.37 2859.68C1321.71 3064.26 1222.2 3187.74 1149.32 3277.97C1122.92 3310.66 1095.48 3343.02 1065.8 3349.06C1045.61 3353.16 1020.34 3334.15 1017.57 3286.58C1015.98 3259.22 1022.76 3233.34 1029.8 3211.34C1080.06 3054.38 1171.28 2919.08 1256.51 2990.59C1315.39 3039.99 1352.01 3205.21 1335.77 3348.09" stroke="#FF6DFF" stroke-width="60" stroke-miterlimit="10"/>
-            </g>
-            <defs>
-            <filter id="filter0_f_335_2219" x="-253.997" y="-181.737" width="1934.02" height="3861.35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_335_2219"/>
-            </filter>
-            </defs>
-            </svg>
-    </div> -->
 
-    <main>
-        <section class="hero-area">
+   
+    <main class="home-page">
+        <div class="hero-area">
             <div class="container">  
-                <div class="row justify-content-center">
-                    <div class="col-xl-10 col-md-12">
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-xl-8 col-lg-11 col-md-12">
                         <div class="powered-icon">
-                            <img src="assets/img/icons/powerded.png" alt="powerded">
+                            <img src="assets/img/logo/powered.png" alt="powerded">
                             <div class="position-relative">
                                 <div class="popup-videos">
-                                    <img src="assets/img/arrival/5.jpg" alt="arrival" loading="lazy">
+                                    <img src="assets/img/icons/video-i.png" alt="video" loading="lazy">
                                     <div class="video-p">
                                         <a class="videos-icon" href="https://www.youtube.com/watch?v=Fzu_gMLk55A">
-                                            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M51.1237 29.7378L45.2602 38.4493C44.8547 39.0425 45.6344 39.7607 46.1958 39.2611L51.9659 34.2341C52.1218 34.1092 52.3401 34.2028 52.3401 34.4214V50.127C52.3401 50.3456 52.0594 50.4393 51.9347 50.2831L34.4687 29.3631C33.9073 28.6762 33.0964 28.3015 32.1919 28.3015H31.5681C29.9462 28.3015 28.6051 29.6441 28.6051 31.299V53.4055C28.6051 55.0604 29.9462 56.403 31.5993 56.403C32.6285 56.403 33.5954 55.8722 34.1568 54.9667L40.0204 46.2553C40.4258 45.662 39.6461 44.9439 39.0847 45.4434L33.3147 50.4393C33.1587 50.5642 32.9404 50.4705 32.9404 50.2519V34.5775C32.9404 34.359 33.2211 34.2653 33.3459 34.4214L50.8119 55.3414C51.3733 56.0283 52.2154 56.403 53.0887 56.403H53.7125C55.3655 56.403 56.7066 55.0604 56.7066 53.4055V31.299C56.7066 29.6441 55.3655 28.3015 53.7125 28.3015C52.652 28.3015 51.6852 28.8323 51.1237 29.7378Z" fill="white"/>
-                                                <path d="M29.1938 2.4491L30.5478 2.12338L32.9684 12.1186L31.6144 12.4443L29.1938 2.4491ZM32.7768 1.58051C33.92 1.30588 34.8525 1.36975 35.5678 1.78489C36.2895 2.20002 36.7813 2.94727 37.0431 4.03301C37.305 5.11875 37.2156 6.01289 36.7621 6.70904C36.3086 7.40519 35.5167 7.89697 34.3735 8.1716C32.6299 8.59312 31.7613 8.81027 31.7613 8.81665L31.5186 7.80117C31.5186 7.81394 32.2084 7.64789 33.5751 7.31578C34.4501 7.10502 35.0696 6.74736 35.4273 6.2492C35.7849 5.75103 35.8743 5.11875 35.6891 4.35873C35.5039 3.59871 35.1399 3.075 34.5906 2.79399C34.0414 2.51297 33.3324 2.48104 32.4575 2.6918C31.0843 3.02391 30.4009 3.19635 30.4073 3.20274L30.1646 2.20641L32.7768 1.58051Z" fill="white"/>
-                                                <path d="M39.7255 9.51287C38.9783 8.62512 38.6143 7.335 38.6398 5.63614C38.6717 3.82231 39.0677 2.46194 39.8469 1.54226C40.6197 0.622571 41.7501 0.175501 43.2255 0.201048C44.7136 0.226595 45.8376 0.705598 46.5976 1.65083C47.3577 2.59606 47.7217 3.96921 47.6898 5.78303C47.6642 7.47551 47.2555 8.75924 46.4763 9.62144C45.6907 10.4837 44.5603 10.9052 43.0722 10.8796C41.5905 10.8541 40.4792 10.4006 39.7255 9.51287ZM45.4161 8.56125C45.9781 7.92897 46.2655 7.00289 46.2847 5.78942C46.3039 4.43544 46.0484 3.40718 45.5119 2.69186C44.9754 1.97655 44.209 1.61251 43.2063 1.59974C42.2164 1.58058 41.45 1.92546 40.9007 2.62161C40.3514 3.31776 40.064 4.33964 40.0449 5.69362C40.0257 6.90709 40.2748 7.83955 40.7985 8.491C41.3222 9.14244 42.0759 9.47455 43.0658 9.48732C44.0749 9.5001 44.8541 9.19354 45.4161 8.56125Z" fill="white"/>
-                                                <path d="M51.2854 0.839721L50.8064 10.3687L56.2735 2.67909L57.9979 3.31776L57.2251 12.7445L62.9859 5.16352L64.2952 5.64891L57.7935 14.2071L55.7689 13.4599L56.7269 4.12249L51.3876 11.844L49.363 11.0968L49.9762 0.360718L51.2854 0.839721Z" fill="white"/>
-                                                <path d="M66.7095 7.83319L72.3298 12.5402L71.5634 13.4535L67.0161 9.64063L64.8637 12.2081L68.2742 15.0693L67.5014 15.9954L64.0909 13.1342L61.9386 15.7016L66.486 19.5145L65.7195 20.4278L60.0992 15.7208L66.7095 7.83319Z" fill="white"/>
-                                                <path d="M74.0731 14.3987L74.9098 15.5164L66.6645 21.6604L65.8279 20.5427L74.0731 14.3987ZM70.2156 18.5692L71.3141 20.0445C71.9016 20.8301 72.4892 21.3155 73.0832 21.5007C73.6771 21.6859 74.2647 21.5646 74.8459 21.1303C75.4718 20.664 75.8039 20.1148 75.8422 19.4889C75.8806 18.863 75.6187 18.1796 75.0631 17.4324C74.8395 17.1322 74.6479 16.8767 74.4755 16.6596C74.3094 16.4424 74.1689 16.2636 74.0667 16.1231L73.8624 15.8549L74.6862 15.2417L76.2127 17.2919C76.9344 18.2563 77.2473 19.1568 77.1579 19.9934C77.0685 20.8301 76.5767 21.5837 75.6762 22.2479C74.8906 22.8355 74.1306 23.0527 73.3897 22.9058C72.6489 22.7589 71.9783 22.2735 71.3588 21.4496L71.6845 21.2261C72.2912 22.0436 72.4701 22.893 72.2146 23.7808C71.9591 24.6685 71.2694 25.5307 70.1453 26.3674L69.3086 25.2497C70.2219 24.5727 70.8095 23.851 71.0841 23.0846C71.3588 22.3182 71.1544 21.5071 70.4838 20.6577L69.3853 19.1823L70.2156 18.5692Z" fill="white"/>
-                                                <path d="M79.6937 22.4331L82.5869 29.1711L81.4948 29.6373L79.1509 24.1831L76.0725 25.5051L77.8288 29.5926L76.7239 30.0652L74.9676 25.9777L71.8892 27.2998L74.2331 32.754L73.141 33.2266L70.2478 26.4887L79.6937 22.4331Z" fill="white"/>
-                                                <path d="M83.3339 31.6619L83.5574 33.0415L73.409 34.7084L73.1854 33.3289L83.3339 31.6619ZM74.3478 34.1144L74.6863 36.1709C74.8715 37.2886 75.3569 38.0806 76.1552 38.5404C76.9536 39.0003 78.0329 39.1152 79.4061 38.8917C80.7217 38.6745 81.667 38.2275 82.2418 37.5377C82.8166 36.8543 83.0146 35.9474 82.8294 34.8297L82.4909 32.7732L83.4936 32.6072L83.8321 34.6637C84.0875 36.2412 83.864 37.4994 83.1551 38.4446C82.4462 39.3898 81.2774 39.9966 79.6424 40.2648C77.9435 40.5458 76.5895 40.3542 75.5804 39.69C74.5713 39.0258 73.9391 37.9081 73.6836 36.3306L73.3451 34.2741L74.3478 34.1144Z" fill="white"/>
-                                                <path d="M83.6851 50.6688C83.4616 51.7929 83.0656 52.5912 82.4972 53.0638C81.9224 53.5365 81.1815 53.6833 80.2682 53.4981C79.4699 53.3385 78.9462 52.8978 78.7035 52.1697C78.4608 51.4416 78.4544 50.4772 78.6907 49.2765L79.0675 49.3532C78.8057 50.6816 78.4225 51.6588 77.9179 52.291C77.4134 52.9233 76.7045 53.1532 75.7912 52.9744C74.8332 52.7828 74.1626 52.3294 73.7921 51.6077C73.4217 50.886 73.3578 49.9088 73.6005 48.6826L74.3031 45.106L75.2802 45.2976C75.2866 45.2976 75.095 46.3067 74.699 48.3121C74.5138 49.2637 74.533 50.0174 74.7629 50.5794C74.9928 51.1414 75.4207 51.4799 76.0594 51.6077C76.5129 51.6971 76.8897 51.6396 77.1899 51.4352C77.49 51.2309 77.7391 50.8924 77.9307 50.4197C78.1223 49.9471 78.3011 49.3084 78.4608 48.5037C78.5566 48.0056 78.6524 47.5457 78.7291 47.137C78.8121 46.7218 78.8823 46.3706 78.9334 46.0832L79.9425 46.2812C79.885 46.5686 79.8148 46.9198 79.7381 47.335C79.6551 47.7501 79.5657 48.2099 79.4635 48.7209C79.2655 49.7364 79.2528 50.5347 79.438 51.1095C79.6232 51.6843 79.9936 52.0292 80.5365 52.1378C81.1113 52.2527 81.5903 52.1186 81.9735 51.7482C82.3567 51.3777 82.6313 50.771 82.7974 49.9344C83.1934 47.9162 83.3913 46.907 83.3786 46.907L84.3877 47.105L83.6851 50.6688ZM84.4962 46.543L84.228 47.9098L74.137 45.9171L74.4052 44.5504L84.4962 46.543Z" fill="white"/>
-                                                <path d="M81.9864 56.9661L75.8041 57.2727L79.6745 62.0947L79.0997 63.3656L74.3671 57.3941L71.1674 55.9507L71.7486 54.6669L74.9483 56.1103L82.5676 55.6952L81.9864 56.9661Z" fill="white"/>
-                                                <path d="M74.8841 69.3435L73.2299 70.9721L63.669 67.4211L70.1515 74.0058L69.1552 74.983L61.9382 67.6574L63.6052 66.0161L73.1277 69.5479L66.6772 62.9951L67.6735 62.018L74.8841 69.3435Z" fill="white"/>
-                                                <path d="M67.0732 76.535L60.7631 80.2648L60.1564 79.243L65.2657 76.2221L63.5605 73.3416L59.7285 75.6089L59.1153 74.5743L62.9474 72.307L61.2421 69.4266L56.1327 72.4475L55.526 71.4256L61.8361 67.6958L67.0732 76.535Z" fill="white"/>
-                                                <path d="M54.9642 82.3788L52.9715 82.9408L46.8275 73.9867L48.1687 73.6099L49.5099 75.5514L54.0637 74.2741L54.2105 71.911L55.5518 71.5342L54.9642 82.3788ZM50.0784 76.4519L53.6102 81.5358L54.0126 75.3534L50.0784 76.4519Z" fill="white"/>
-                                                <path d="M45.7931 78.5851L43.9601 78.6171C42.983 78.6298 42.2421 78.8278 41.7439 79.2046C41.2458 79.5815 41.0031 80.1307 41.0159 80.8524C41.0286 81.638 41.2777 82.2256 41.7631 82.6151C42.2485 83.0111 42.9574 83.1963 43.8899 83.1836C44.2603 83.1772 44.586 83.1708 44.8606 83.158C45.1353 83.1452 45.3588 83.1452 45.5376 83.1389L45.8761 83.1325L45.8953 84.1607L43.3406 84.1991C42.1335 84.2182 41.2202 83.95 40.5943 83.3816C39.9684 82.8131 39.6491 81.9765 39.6299 80.8652C39.6172 79.888 39.879 79.1408 40.4283 78.6235C40.9775 78.1125 41.7695 77.8443 42.7977 77.8315L42.7914 78.2275C41.7759 78.2466 40.9775 77.889 40.4091 77.1673C39.8407 76.4392 39.5405 75.379 39.5214 73.9803L40.9201 73.9548C40.9392 75.0916 41.1755 75.9921 41.6418 76.6627C42.1016 77.3333 42.8744 77.6399 43.9665 77.5952L45.7995 77.5633L45.7931 78.5851ZM46.9299 84.148L45.5376 84.1735L45.3716 73.8909L46.7703 73.8654L46.9299 84.148Z" fill="white"/>
-                                                <path d="M29.0978 81.9828C27.9866 81.606 27.2329 81.0504 26.8497 80.3095C26.4665 79.575 26.4474 78.6745 26.8114 77.6207C27.1754 76.5669 27.7247 75.858 28.4783 75.5131C29.232 75.1682 30.1644 75.181 31.2821 75.5578C32.981 76.1326 33.8304 76.4136 33.8304 76.4072L33.4983 77.3972C33.4983 77.3908 32.8341 77.1545 31.4992 76.701C30.6434 76.4136 29.9345 76.3817 29.3661 76.6116C28.7977 76.8415 28.3889 77.3269 28.1334 78.0678C27.8844 78.8086 27.9099 79.4473 28.2229 79.9774C28.5358 80.5075 29.117 80.9163 29.9728 81.2037C31.3076 81.6571 31.9782 81.8806 31.9782 81.8679L31.6461 82.8387L29.0978 81.9828ZM32.5914 83.1644L31.2693 82.7173L34.5712 72.9776L35.8933 73.4246L32.5914 83.1644Z" fill="white"/>
-                                                <path d="M25.5148 74.4594L23.9629 73.4822C23.1326 72.9585 22.4109 72.7222 21.785 72.7669C21.1655 72.8116 20.6609 73.1373 20.2714 73.7504C19.8562 74.4146 19.7413 75.0405 19.9329 75.6409C20.1245 76.2349 20.6162 76.7841 21.4018 77.2759C21.7148 77.4739 21.9894 77.6463 22.2257 77.7868C22.462 77.9273 22.6536 78.0487 22.8005 78.1381L23.0879 78.3169L22.5386 79.1855L20.3735 77.8252C19.3517 77.1865 18.7322 76.4584 18.515 75.6409C18.2979 74.8298 18.4831 73.9484 19.077 73.0032C19.6008 72.1729 20.2267 71.6939 20.9675 71.5662C21.7084 71.4384 22.5131 71.6428 23.3881 72.1921L23.1645 72.5178C22.3023 71.9749 21.8297 71.2468 21.7467 70.3272C21.6637 69.4075 21.9958 68.3537 22.743 67.1721L23.9246 67.913C23.3178 68.8774 23.0304 69.7587 23.0496 70.5762C23.0687 71.3937 23.5477 72.0707 24.4866 72.6264L26.0386 73.6035L25.5148 74.4594ZM23.4264 79.7412L22.2449 79.0003L27.7183 70.2952L28.8998 71.0361L23.4264 79.7412Z" fill="white"/>
-                                                <path d="M21.1339 67.2615C21.019 68.4175 20.3484 69.5799 19.1157 70.7423C17.8001 71.9877 16.5419 72.6519 15.3412 72.7413C14.1469 72.8307 13.0356 72.3326 12.0201 71.2596C10.9982 70.1803 10.5575 69.037 10.7044 67.8363C10.8513 66.6356 11.5794 65.4094 12.8951 64.1704C14.1277 63.008 15.322 62.4012 16.4908 62.3629C17.6532 62.3182 18.7517 62.8419 19.7736 63.9213C20.7954 64.9879 21.2425 66.1055 21.1339 67.2615ZM16.478 63.8574C15.635 63.9021 14.7728 64.3364 13.8914 65.1731C12.9078 66.0992 12.3522 67.0061 12.2117 67.8874C12.0712 68.7688 12.3522 69.5735 13.0356 70.3016C13.7126 71.0233 14.4981 71.3363 15.3795 71.2405C16.2609 71.1447 17.1933 70.6401 18.1769 69.7076C19.0583 68.871 19.55 68.0407 19.6522 67.2168C19.7544 66.3866 19.4606 65.6138 18.7836 64.8985C18.0875 64.1576 17.3211 63.8127 16.478 63.8574Z" fill="white"/>
-                                                <path d="M8.08596 66.3738L4.19006 59.4825L5.22471 58.8949L6.83416 61.7306L14.7473 57.2535L15.4371 58.467L7.52393 62.9441L9.13338 65.7798L8.08596 66.3738Z" fill="white"/>
-                                                <path d="M11.9623 54.3476C11.3237 55.3183 10.1868 56.0273 8.55183 56.4807C6.80826 56.9661 5.38402 56.9661 4.28551 56.4807C3.18699 55.9953 2.43975 55.0437 2.04377 53.6195C1.64779 52.1825 1.79469 50.969 2.48445 49.9791C3.17422 48.9827 4.39408 48.2483 6.13765 47.7629C7.77265 47.3094 9.11386 47.335 10.1613 47.8459C11.2087 48.3504 11.9368 49.3212 12.3328 50.7582C12.7223 52.1761 12.601 53.3768 11.9623 54.3476ZM9.43958 49.1616C8.67318 48.8039 7.70878 48.7911 6.54001 49.1105C5.23713 49.4745 4.31744 50.011 3.78734 50.7263C3.25725 51.4416 3.12312 52.2847 3.39137 53.2427C3.65322 54.1943 4.20248 54.8393 5.01998 55.1651C5.84386 55.4972 6.90406 55.478 8.20695 55.1204C9.37571 54.7946 10.1996 54.2901 10.6786 53.6067C11.1512 52.9233 11.2598 52.0994 10.9979 51.1478C10.7233 50.1834 10.206 49.5192 9.43958 49.1616Z" fill="white"/>
-                                                <path d="M9.74631 45.6553C8.79469 46.3961 7.44071 46.7538 5.69075 46.7282C3.96634 46.7027 2.66345 46.3067 1.78847 45.5403C0.907104 44.7739 0.479195 43.6626 0.504742 42.2064C0.530288 40.7567 0.887944 39.6709 1.59048 38.9428C2.29302 38.2147 3.30851 37.8635 4.64333 37.8826L4.61778 39.2749C3.73642 39.2622 3.06581 39.5049 2.60597 39.9966C2.14613 40.4948 1.90982 41.2357 1.89704 42.2256C1.87788 43.2219 2.19722 43.9883 2.84228 44.512C3.48733 45.0358 4.45811 45.3104 5.73546 45.3295C7.0575 45.3487 8.06022 45.1124 8.74998 44.6078C9.43975 44.1033 9.79102 43.3561 9.81018 42.3533C9.82295 41.3634 9.61219 40.6162 9.17151 40.1052C8.73082 39.5943 8.06661 39.3324 7.18524 39.3133L7.21079 37.921C8.54561 37.9401 9.54832 38.3297 10.2253 39.077C10.9023 39.8242 11.228 40.9291 11.2089 42.3789C11.1897 43.8159 10.7043 44.908 9.74631 45.6553Z" fill="white"/>
-                                                <path d="M10.1552 36.7968C9.10777 37.3014 7.76656 37.3205 6.13156 36.8735C4.38799 36.3881 3.16813 35.66 2.47198 34.6764C1.77583 33.6993 1.62893 32.4922 2.02491 31.068C2.42088 29.6309 3.17451 28.6666 4.27942 28.1684C5.38432 27.6702 6.80855 27.6638 8.55213 28.1492C10.1871 28.6027 11.3176 29.318 11.9626 30.2888C12.6013 31.2659 12.7226 32.4666 12.3267 33.9037C11.9243 35.3343 11.2026 36.2923 10.1552 36.7968ZM10.6661 31.0552C10.1935 30.3526 9.37601 29.8417 8.20086 29.516C6.89797 29.1519 5.83139 29.1456 5.0075 29.4841C4.18362 29.8225 3.63436 30.474 3.36612 31.4384C3.10426 32.39 3.23838 33.2203 3.77487 33.9292C4.31135 34.6381 5.23104 35.1682 6.53392 35.5323C7.70269 35.858 8.66709 35.8452 9.43349 35.5067C10.1935 35.1618 10.7044 34.5168 10.9727 33.5652C11.2345 32.588 11.1387 31.7513 10.6661 31.0552Z" fill="white"/>
-                                                <path d="M4.54126 24.5407L5.22464 23.3273L13.1505 27.7852L15.5328 23.5444L16.5674 24.1256L13.5082 29.5799L4.54126 24.5407Z" fill="white"/>
-                                                <path d="M20.1627 16.2508C19.8434 16.2189 19.5496 16.0337 19.2686 15.6888C18.994 15.3567 18.879 15.031 18.911 14.718C18.9493 14.4051 19.1345 14.1113 19.4794 13.8303C19.8115 13.5556 20.1372 13.4407 20.4438 13.4726C20.7567 13.5045 21.0441 13.6897 21.3187 14.0219C21.5998 14.3667 21.7211 14.6925 21.6956 15.0054C21.67 15.3184 21.4848 15.6121 21.1527 15.8868C20.8078 16.1614 20.4821 16.2827 20.1627 16.2508Z" fill="white"/>
-                                            </svg>
+                                            <i class="fas fa-play"></i>
                                         </a>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="hero-description">
+                            <div class="hero-subs-t">
+                                <span class="t-16 p1-c text-uppercase">Terraspaces</span>
+                            </div>
+                            <div class="hero-title">
+                                <h1>Generative <span class="p1-c ">Dystopian </span> <br> NFTs meet utility</h1>
+                            </div>
+                            <div class="hero-d-p">
+                                <p class="t-18 white-c">
+                                    Generative dystopian NFTs meet utility via proof-of-staking to <br>access analytics dashboard. Genesis collection of 777.
+                                </p>
+                            </div>
 
-
+                            <div class="get-button">
+                                <a href="javascript:void(0)" class="cmn-btn">
+                                    <span> Get Started</span>
+                                    <img class="pl-2" src="assets/img/icons/get-icons.png" alt="get">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div> <!-- hero-area end -->
+
+        <div class="terraspace-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3 mb-20">
+                        <div class="t-single-wrapper">
+                            <div class="t-single-description radius-35 radius-b-l-r border-bottom-0">
+                                <p class="p1-c t-16 text-uppercase"> Terraspaces.Near</p>
+                                <h2 class="t-36">Introducing Proof-Of-Staking</h2>
+                                <p class="white-c t-16">The 1st cutting-edge analytics interface on NEAR. Access analytics dashboard for NEAR NFTs via Proof-Of-Staking.</p>
+                            </div>
+                            <div class="t-single-img">
+                                <img class="radius-35 radius-t-l-r" src="assets/img/home/terra3.png" alt="terra3" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-6 mb-20">
+                        <div class="t-middle-wrapper">
+                            <div class="t-middle-img radius-35">
+                                <img src="assets/img/home/terra1.png" alt="terra3">
+                            </div>
+                            <div class="t-middle-img radius-35">
+                                <img src="assets/img/home/terra2.png" alt="terra3">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 mb-20">
+                        <div class="t-single-wrapper ">
+                            <div class="t-single-img">
+                                <img class="radius-35 radius-b-l-r" src="assets/img/home/terra4.png" alt="terra4" loading="lazy">
+                            </div>
+                            <div class="t-single-description radius-35 radius-t-l-r border-top-0">
+                                <p class="p1-c t-16 text-uppercase"> Terraspaces.Near</p>
+                                <h2 class="t-36">Introducing Proof-Of-Staking</h2>
+                                <p class="white-c t-16">The 1st cutting-edge analytics interface on NEAR. Access analytics dashboard for NEAR NFTs via Proof-Of-Staking.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- terraspace-wrapper end-->
+
+
+        <div class="dasboard-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5 d-flex align-items-center justify-content-center mb-20">
+                        <div>
+                            <div class="dash-des">
+                                <div class="flex-d">
+                                    <div class="icons-f">
+                                        <img src="assets/img/icons/get-icons.png" alt="get-icons">
+                                    </div>
+                                    <h5 class="t-20 white-c">Dashbaord</h5>
+                                </div>
+                                <div class="dash-info pt-15 pb-15">
+                                    <p class="t-16 neutral-c">
+                                        Terraspaces will enable staked owners to access the exclusive analytics dashboard; your user-friendly graphical charting tool for collections listed on Paras Marketplace providing the following data:
+                                    </p>
+                                </div>
+                                <div class="d-grid-2 before-srarting-img">
+                                    <ul>
+                                        <li>
+                                            Floor price change for collection.
+                                        </li>
+                                        
+                                        <li>
+                                            Total volume change for collection.
+                                        </li>
+                                        <li>
+                                            Upcoming calendar. <span class="p1-c"> Coming Soon.</span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Total listing change for collection.
+                                        </li>
+                                        <li>
+                                            New collection alert. <span class="p1-c"> Coming Soon.</span>
+                                        </li>
+                                        <li>
+                                            Add collections to your watchlist.
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dash-des staking mt-40">
+                                <div class="flex-d">
+                                    <div class="icons-f">
+                                        <img src="assets/img/icons/server.png" alt="server">
+                                    </div>
+                                    <h5 class="t-20 white-c">Staking</h5>
+                                </div>
+                                <div class="dash-info pt-15 pb-15">
+                                    <p class="t-16 neutral-c">
+                                        Terraspaces NFT owners will be required to stake their NFT to access the exclusive NEAR NFT analytics dashboard via Proof-Of-Staking. 
+                                    </p>
+                                </div>
+                                <div class="d-grid-2 before-srarting-img">
+                                    <ul>
+                                        
+                                        <li>
+                                            Gated analytical dashboard for NEAR collections via Proof-Of-Staking Terraspaces NFT.
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Multi-collection Proof-Of-Staking to access analytical dashboard as Staking Partners.
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-6 col-xl-7  m-auto">
+                        <div class="ps-xl-4 p-0">
+                            <div class="stak-img text-center">
+                                <img src="assets/img/home/terra5.png" alt="terra5" loading="lazy">
+                                <div class="stak-img-abs">
+                                    <img src="assets/img/vector/vector2.png" alt="Vector" loading="lazy">    
+                                </div>   
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div><!-- dasboard-wrapper end-->
+        <div class="collecton-wrapper">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="sec-t text-center">
+                        <h2 class="section-heading">
+                            Most Tracked Collections
+                        </h2>
+                    </div>
+                    <div class="tracker-wrapper">
+                        <div class="d-grid-5">
+                            <div class="single-tracker ">
+                                <div class="t-single-img">
+                                    <img class="radius-35 radius-b-l-r" src="assets/img/home/collection1.png" alt="collection1" loading="lazy">
+                                </div>
+                                <div class="t-single-description radius-35 radius-t-l-r border-top-0">
+                                    <h5 class="white-c t-20 text-capitalize">
+                                        Ultron Apes
+                                    </h5>
+                                    <p class="neutral-c t-14 pt-1">
+                                        482 Items
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-tracker ">
+                                <div class="t-single-img">
+                                    <img class="radius-35 radius-b-l-r" src="assets/img/home/collection2.png" alt="collection1" loading="lazy">
+                                </div>
+                                <div class="t-single-description radius-35 radius-t-l-r border-top-0">
+                                    <h5 class="white-c t-20 text-capitalize">
+                                        CyberWave
+                                    </h5>
+                                    <p class="neutral-c t-14 pt-1">
+                                        482 Items
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-tracker ">
+                                <div class="t-single-img">
+                                    <img class="radius-35 radius-b-l-r" src="assets/img/home/collection3.png" alt="collection1" loading="lazy">
+                                </div>
+                                <div class="t-single-description radius-35 radius-t-l-r border-top-0">
+                                    <h5 class="white-c t-20 text-capitalize">
+                                        Fractalvc
+                                    </h5>
+                                    <p class="neutral-c t-14 pt-1">
+                                        482 Items
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-tracker ">
+                                <div class="t-single-img">
+                                    <img class="radius-35 radius-b-l-r" src="assets/img/home/collection4.png" alt="collection1" loading="lazy">
+                                </div>
+                                <div class="t-single-description radius-35 radius-t-l-r border-top-0">
+                                    <h5 class="white-c t-20 text-capitalize">
+                                        Terraspaces
+                                    </h5>
+                                    <p class="neutral-c t-14 pt-1">
+                                        482 Items
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-tracker ">
+                                <div class="t-single-img">
+                                    <img class="radius-35 radius-b-l-r" src="assets/img/home/collection5.png" alt="collection1" loading="lazy">
+                                </div>
+                                <div class="t-single-description radius-35 radius-t-l-r border-top-0">
+                                    <h5 class="white-c t-20 text-capitalize">
+                                        Octopussi
+                                    </h5>
+                                    <p class="neutral-c t-14 pt-1">
+                                        482 Items
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- dasboard-wrapper end-->
+        <div class="tranding-wrapper">
+            <div class="container">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-12 col-lg-10" >
+                        <div class="sec-t text-center">
+                            <h2 class="section-heading">
+                                Trending Collections
+                            </h2>
+                            <div class="track-select f-right ">
+                                <div class="dropdown">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Last 24 Hours
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"> Last 24 Hours</a></li>
+                                      <li><a class="dropdown-item" href="#"> Last 7 Days</a></li>
+                                      <li><a class="dropdown-item" href="#"> Last 30 Days</a></li>
+                                    </ul>
+                                  </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+
+                    <div class="tranding-table">
+                        <div class="table-responsive-lg">
+                           <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="text-left">
+                                        <h5>Collections</h5>
+                                    </th>
+                                    <th scope="col"><h5>Floor</h5></th>
+                                    <th scope="col"><h5>
+                                        <span class="success-c"> 24h%</span>
+                                    </h5></th>
+                                    <th scope="col"><h5> <span class="danger-c">7d% </span></h5></th>
+                                    <th scope="col"><h5>Owners</h5></th>
+                                    <th scope="col"><h5>Volume</h5></th>
+                                    <th scope="col"><h5>1d Volume</h5></th>
+                                    <th scope="col"><h5>Watchlist</h5></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>1. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract1.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>2. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract2.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>3. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract3.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>4. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract4.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>5. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract5.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>6. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract6.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>7. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract7.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>8. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract8.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fas fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>9. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract9.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                                    <tr>
+                                        <td>
+                                            <div class="table-f flex-d">
+                                                <span>10. </span>
+                                                <div class="flex-d">
+                                                    <img src="assets/img/icons/abstract10.png" alt="abstract1">
+                                                    <p>The Abstract Art Piece</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>0.06</td>
+                                        <td> <span class="success-c"> <i class="fa-solid fa-caret-up"></i>47.50% </span></td>
+                                        <td> <span class="danger-c"> <i class="fa-solid fa-caret-down"></i>47.50% </span></td>
+                                        <td>3.7k</td>
+                                        <td>
+                                            <img src="assets/img/icons/volume.png" alt="volume">
+                                            31850.77
+                                        </td>
+                                        <td>192.20</td>
+                                        <td>
+                                            <i class="fa-regular fa-star"></i>
+                                        </td>
+                                    </tr> <!-- tr end -->
+                            
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="range-btn text-center">
+                            <button type="button" class="cmn-bor-btn border-shade shade-c">10 - 20</button>
+                            <button type="button" class="cmn-bor-btn border-p2 white-c ml-20">20 - 30</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- trending-wrapper end-->
+        <div class="partner-wrapper">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="sec-t text-center">
+                        <h2 class="section-heading">
+                            Staking Partners
+                        </h2>
+                    </div>
+                    <div class="partner-slider">
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- dasboard-wrapper end-->
+        <!-- collaborator start -->
+        <section class="collaborator sec-padding-top">
+
+            <div class="container position-relative">
+                <div class="heading">
+                    <h2 class="s-heading">
+                        COLLABORATORS
+                    </h2>
+                    <h4 class="s-sub-heading">
+                        We are happy <span class="s-sub-c">to find them.</span>
+                    </h4>
+                </div> <!-- heading end -->
+                <div class="row-reverse">
+                    <div class="text-center text-lg-end mt-20">
+                        <a href="collaborator.html" class="com-bor-btn">All</a>
+                    </div>
+                    <div class="mt-50 collaborator-wrapper">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-lg-10">
+                                <div class="partner-slider com-slider owl-carousel owl-theme">
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator1.png" alt="collaborator1"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator2.png" alt="collaborator2"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator3.png" alt="collaborator3"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator4.png" alt="collaborator4"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator5.png" alt="collaborator5"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator1.png" alt="collaborator1"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator2.png" alt="collaborator2"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator3.png" alt="collaborator3"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator4.png" alt="collaborator4"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="collaborator-items">
+                                        <img src="assets/img/collaborator/collaborator5.png" alt="collaborator5"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- div end -->
+                </div><!-- row-reverse -->
+            </div>
+
         </section>
+        <!-- collaborator end -->
+        <section class="testimonial-area bg-green section-ptb">
+            <div class="container">
+              <div class="sec-title">
+                <h2 class="text-light">Testimonial</h2>
+                <p>The portfolio website lets teachers, researchers, students, and professionals share and showcase their skills, education, work, achievements.</p>
+              </div><!-- /. sec-title -->
+    
+              <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-single">
+                    <img src="assets/img/slider/partner1.png" alt="partner1">
+                  <div class="testimonial-single-quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  </div>
+                </div><!-- /. testimonial-single -->
+                <div class="testimonial-single">
+                    <img src="assets/img/slider/partner2.png" alt="partner1">
+                  <div class="testimonial-single-quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  </div>
+                </div><!-- /. testimonial-single -->
+                <div class="testimonial-single">
+                    <img src="assets/img/slider/partner3.png" alt="partner1">
+                  <div class="testimonial-single-quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  </div>
+                </div><!-- /. testimonial-single -->
+                <div class="testimonial-single">
+                    <img src="assets/img/slider/partner1.png" alt="partner1">
+                  <div class="testimonial-single-quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  </div>
+                </div><!-- /. testimonial-single -->
+                <div class="testimonial-single">
+                    <img src="assets/img/slider/partner2.png" alt="partner1">
+                  <div class="testimonial-single-quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  </div>
+                </div><!-- /. testimonial-single -->
+                <div class="testimonial-single">
+                    <img src="assets/img/slider/partner3.png" alt="partner1">
+                  <div class="testimonial-single-quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                  </div>
+                </div><!-- /. testimonial-single -->
+    
+               
+    
+    
+              </div>
+    
+            </div>
+          </section>
+
     </main>
 
     <footer class="footer-wrapper">
@@ -268,6 +901,31 @@
     <script src="assets/js/magnific-popup.min.js"></script>
     <!--=== Main js ===-->
     <script src="assets/js/main.js"></script>
+    <script>
+               $(".testimonial-carousel").owlCarousel({
+          center: true,
+          items:3,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>',
+        ],
+        autoplay: false,
+          loop:true,
+          responsive:{
+              0:{
+                  items:1,
+              },
+              600:{
+                  items:1,
+              },
+              768:{
+                  items:3,
+              }
+          }
+
+        });  
+    </script>
 </body>
 
 </html>
