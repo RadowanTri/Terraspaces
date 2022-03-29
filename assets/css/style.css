@@ -34,11 +34,11 @@ filter: blur(300px); */
 }
 
 .home-vect-abs.v-top {
-    top:0%;
+    top: 0%;
 }
 
 .home-vect-abs.v-bottom {
-    bottom:0%;
+    bottom: 0%;
 }
 
 
@@ -91,10 +91,12 @@ filter: blur(300px); */
 .terraspace-wrapper {
     margin-top: 45px;
 }
+
 .terraspace-wrapper .t-middle-img {
     text-align: center;
 }
-.terraspace-wrapper .t-single-img img{
+
+.terraspace-wrapper .t-single-img img {
     width: 100%;
 }
 
@@ -122,20 +124,20 @@ filter: blur(300px); */
 }
 
 
-
-
 /* collection-wrapper */
+
 .tracker-wrapper .single-tracker {
     width: 230px;
     height: 232px;
     text-align: center;
     margin: 0 auto;
 }
+
 .tracker-wrapper .single-tracker .t-single-img img {
     width: 230px;
     height: 160px;
-
 }
+
 .tracker-wrapper .single-tracker .t-single-description {
     text-align: center;
     padding: 10px 10px 20px 10px;
@@ -248,26 +250,42 @@ filter: blur(300px); */
     padding: 10px;
     border-radius: 12px;
     position: relative;
-    min-width: 9rem;
+    min-width: 153px;
     font-family: Gojali-Regular;
     font-size: 18px;
+    display: flex;
+    align-items: center;
 }
+
+.track-select .btn img {
+    margin-left: 8px;
+}
+
+.track-select .dropdown-toggle::after {
+    display: none
+}
+
+.table-f.flex-d span {
+    flex-basis: 20px;
+}
+
 button.star-btn {
     position: relative;
     display: inline-block;
     text-align: center;
 }
+
 button.star-btn:before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f006";
+    content: "";
+    background-image: url(../img/icons/star-h.png);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
-    font-size: 19px;
-    color: var(--white);
+    width: 24px;
+    height: 24px;
     -webkit-transform: translate(-50%, -65%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -277,9 +295,7 @@ button.star-btn:before {
 button.star-btn:focus:before,
 button.star-btn:active:before,
 button.star-btn:hover:before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-   content: "\f005";
+    background-image: url(../img/icons/star-f.png);
 }
 
 .track-select .dropdown-item {
@@ -332,20 +348,6 @@ button.star-btn:hover:before {
     width: 100%;
     height: 100%;
 }
-
-
-/* .partner-wrapper::before {
-    position: absolute;
-    content: '';
-    left: 0px;
-    top: 50%;
-    background: url(../img/vector/h-circle.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-} */
 
 .partner-carousel {
     position: relative;

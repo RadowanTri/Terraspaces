@@ -213,7 +213,7 @@
         padding: 0px;
     }
     .header-area .navbar .cmn-btn {
-        margin-right: 8px;
+        margin-right: 18px;
     }
     .header-area .navbar-nav li {
         margin-right: 15px;
@@ -269,14 +269,14 @@
     .footer-wrapper .copyright .copy-link a {
         font-size: 13px;
     }
-    .footer-wrapper .newsletter-form input {
+    /* .footer-wrapper .newsletter-form input {
         height: 40px;
         font-size: 14px;
-    }
-    .footer-wrapper .newsletter-form .cmn-btn {
+    } */
+    /* .footer-wrapper .newsletter-form .cmn-btn {
         height: 32px;
         bottom: 4px;
-    }
+    } */
     .footer-wrapper .footer-border {
         padding-top: 20px;
         padding-bottom: 15px;
@@ -301,6 +301,9 @@
     .partner-wrapper {
         padding-bottom: 150px;
     }
+     .f-row-reverse {
+         flex-direction: column-reverse;
+     }
 }
 
 
@@ -313,9 +316,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-    .f-row-reverse {
-        flex-direction: column-reverse;
-    }
+   
     .t-20 {
         font-size: 16px;
     }

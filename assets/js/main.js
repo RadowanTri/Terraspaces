@@ -13,12 +13,12 @@ $(document).ready(function($) {
 
     // hover
     $('.navbar-nav .nav-link').hover(
-    function(){ 
-    $(".navbar-nav .nav-link.active").addClass('inactive').removeClass('active');
-    },
-    function(){ 
-    $(".navbar-nav .nav-link.inactive").addClass('active').removeClass('inactive'); 
-    }
+        function() {
+            $(".navbar-nav .nav-link.active").addClass('inactive').removeClass('active');
+        },
+        function() {
+            $(".navbar-nav .nav-link.inactive").addClass('active').removeClass('inactive');
+        }
     );
     // partner slider
 
@@ -49,6 +49,9 @@ $(document).ready(function($) {
         }
     });
 
+    $('.range-btn').on('click', '.btn', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
     // Magnific popup
     $('.videos-icon').magnificPopup({
         type: 'iframe',

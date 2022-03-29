@@ -1044,9 +1044,11 @@ p {
 .p1-c {
     color: var(--primary-1);
 }
+
 .p2-c {
     color: var(--primary-2);
 }
+
 .white-c {
     color: var(--white);
 }
@@ -1125,16 +1127,20 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 20px;
+    padding: 20px;
     position: relative;
     text-align: center;
     color: var(--white);
     border-radius: 10px;
     height: 54px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .cmn-btn span {
-    margin-right: 12px;
+    margin-right: 8px;
 }
 
 .cmn-btn img {
@@ -1142,9 +1148,33 @@ p {
     height: 20px;
 }
 
+.f-20 {
+    font-size: 20px;
+}
+
+.pding-10 {
+    padding: 10px;
+}
+
+.redius-12 {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.font-regular {
+    font-family: Gojali-Regular;
+}
+
 .cmn-btn:focus,
 .cmn-btn:hover {
     color: var(--white);
+}
+
+.h-48 {
+    height: 48px !important;
 }
 
 .cmn-bor-btn {
@@ -1159,6 +1189,12 @@ p {
     text-align: center;
     border-radius: 10px;
     height: 54px;
+}
+
+.cmn-bor-btn.active,
+.cmn-bor-btn:hover {
+    background-color: var(--primary-2);
+    color: var(--white);
 }
 
 .border-shade {
@@ -1309,6 +1345,7 @@ p {
     transform: translateX(-50%);
 }
 
+
 /* header css */
 
 .hedaer-abs {
@@ -1453,7 +1490,7 @@ p {
     height: 55px;
     width: 100%;
     padding: 8px 8px 8px 16px;
-    font-family: Proxima-Regular;
+    font-family: Gojali-Regular;
     border: 0 none;
     border-radius: 12px;
     outline: none;
@@ -1467,7 +1504,7 @@ p {
 }
 
 .footer-wrapper .newsletter-form .cmn-btn {
-    font-family: Proxima-Regular;
+    font-family: Gojali-Regular;
     padding: 12px 16px;
     height: 42px;
     transition: background-color .3s cubic-bezier(.165, .84, .44, 1);
