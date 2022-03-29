@@ -1,3 +1,9 @@
+@media (min-width: 1366px) {
+    .hero-area .hero-title h1 {
+        font-size: 72px;
+        line-height: 100%;
+    }
+}
 @media (min-width: 1199px) {
     .d-grid-5 {
         gap: 30px;
@@ -19,7 +25,7 @@
         padding: 0px 40px;
     }
     .hero-area .hero-title h1 {
-        font-size: 72px;
+        font-size: 68px;
         line-height: 100%;
     }
     .hero-area .hero-d-p {
@@ -94,13 +100,15 @@
     .tracker-wrapper .single-tracker {
         width: 210px;
     }
+    .partner-wrapper {
+        padding-bottom: 150px;
+        position: relative;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
     /* font-size */
-    br {
-        display: none;
-    }
+ 
     /* font-size */
     .section-heading {
         font-size: 35px;
@@ -212,9 +220,7 @@
     .header-area .navbar {
         padding: 0px;
     }
-    .header-area .navbar .cmn-btn {
-        margin-right: 18px;
-    }
+  
     .header-area .navbar-nav li {
         margin-right: 15px;
         margin-bottom: 15px;
@@ -287,6 +293,12 @@
 /* Mobile Layout: 320px. */
 
 @media (max-width: 767px) {
+       br {
+           display: none;
+       }
+         .header-area .navbar .cmn-btn {
+             margin-right: 18px;
+         }
     .icons-f,
     .videos-icon {
         height: 35px;

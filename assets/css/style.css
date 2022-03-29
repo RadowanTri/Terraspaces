@@ -277,7 +277,7 @@ button.star-btn {
 
 button.star-btn:before {
     content: "";
-    background-image: url(../img/icons/star-h.png);
+    background-image: url(../img/icons/star-f.svg);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -295,7 +295,7 @@ button.star-btn:before {
 button.star-btn:focus:before,
 button.star-btn:active:before,
 button.star-btn:hover:before {
-    background-image: url(../img/icons/star-f.png);
+    background-image: url(../img/icons/star-d.svg);
 }
 
 .track-select .dropdown-item {

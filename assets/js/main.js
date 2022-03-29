@@ -31,8 +31,8 @@ $(document).ready(function($) {
             '<i class="fa-solid fa-arrow-right-long"></i>',
         ],
         dots: false,
-        autoplay: false,
         loop: true,
+        autoplay: true,
         responsive: {
             0: {
                 items: 1,
