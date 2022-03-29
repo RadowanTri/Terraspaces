@@ -1156,10 +1156,10 @@ p {
     margin-right: 8px;
 }
 
-.cmn-btn img {
+/* .cmn-btn img {
     width: 20px;
     height: 20px;
-}
+} */
 
 .f-20 {
     font-size: 20px;
@@ -1245,8 +1245,8 @@ p {
 .before-srarting-img>ul>li:before {
     content: url(../img/icons/checked.svg);
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
