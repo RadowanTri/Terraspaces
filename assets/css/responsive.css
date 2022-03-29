@@ -304,6 +304,9 @@
      .f-row-reverse {
          flex-direction: column-reverse;
      }
+     .stak-img-abs img{
+         max-width: 75%;
+     }
 }
 
 
