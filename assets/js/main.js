@@ -22,32 +22,6 @@ $(document).ready(function($) {
     );
     // partner slider
 
-    var $partnerSlider = $(".partner-carousel");
-    $partnerSlider.owlCarousel({
-        center: true,
-        nav: true,
-        navText: [
-            '<i class="fa-solid fa-arrow-left-long"></i>',
-            '<i class="fa-solid fa-arrow-right-long"></i>',
-        ],
-        dots: false,
-        loop: true,
-        autoplay: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-            },
-            992: {
-                items: 3,
-            },
-            1399: {
-                items: 3,
-            }
-        }
-    });
 
     $('.range-btn').on('click', '.btn', function() {
         $(this).addClass('active').siblings().removeClass('active');

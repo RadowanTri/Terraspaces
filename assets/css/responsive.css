@@ -1,7 +1,16 @@
+@media (min-width: 1440px) {
+    .dashboard-wrapper .chart-b img {
+        height: 358px;
+    }
+}
+
 @media (min-width: 1366px) {
     .hero-area .hero-title h1 {
         font-size: 72px;
         line-height: 100%;
+    }
+    .dashboard-wrapper .chart-b img {
+        height: 358px;
     }
 }
 
@@ -53,7 +62,7 @@
     }
     /* partner wrapper */
     .partner-wrapper {
-        padding-bottom: 290px;
+        padding-bottom: 250px;
     }
     .partnet-s-title p {
         padding-top: 25px;
@@ -83,6 +92,9 @@
     .powered-icon img,
     .popup-videos img {
         max-width: 70%;
+    }
+    .dashboard-wrapper .watchlist-wrapper .watch-btn {
+        margin-top: 140px;
     }
 }
 
@@ -197,6 +209,9 @@
     .terraspace-wrapper .t-single-description h2 {
         padding-top: 15px;
         padding-bottom: 20px;
+    }
+    .dashboard-wrapper .watchlist-wrapper .watch-btn {
+        margin-top: 140px;
     }
     /* mint responsive */
     .mint-wrapper {
