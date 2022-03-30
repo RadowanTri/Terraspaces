@@ -1200,6 +1200,10 @@ p {
     font-size: 20px;
 }
 
+.f-18 {
+    font-size: 18px;
+}
+
 .padding-10 {
     padding: 10px;
 }
@@ -1267,9 +1271,11 @@ p {
 .h-48 {
     height: 48px !important;
 }
-.card-bg{
+
+.card-bg {
     background-color: var(--card-color);
 }
+
 .cmn-bor-btn {
     background-color: transparent;
     font-family: Gojali-Regular;
