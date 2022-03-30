@@ -421,9 +421,6 @@
         padding-left: calc(var(--bs-gutter-x) * .3);
         margin-top: var(--bs-gutter-y);
     }
-    .stake-wrapper .t-card-img .stake-img {
-        height: 150px;
-    }
     .stking-hero-area .count-parent .count-s:nth-child(3) .single-text::before {
         display: none;
     }
