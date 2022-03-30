@@ -384,10 +384,6 @@ button.star-btn:hover:before {
     display: inline-block;
 }
 
-.partner-single .image-2 {
-    margin: 0px 126px;
-}
-
 .partnet-s-title p {
     padding-top: 15px;
     padding-bottom: 35px;
@@ -681,4 +677,17 @@ button.star-btn:hover:before {
 .dashboard-wrapper .single-watchlist .track-select .btn {
     margin: 0;
     padding: 0;
+}
+
+.partner-single a.image-1 img,
+.partner-single a.image-3 img {
+    width: 225px;
+}
+
+.partner-single .image-2 {
+    margin: 0px 126px;
+}
+
+.partner-single .image-2 img {
+    width: 277px;
 }
