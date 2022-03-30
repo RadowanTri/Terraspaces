@@ -1022,6 +1022,22 @@ p {
     padding: 35px;
 }
 
+.pt-160 {
+    padding-top: 160px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-4 {
+    margin-right: 4px;
+}
+
+.pr-8 {
+    padding-right: 8px;
+}
+
 .sec-padding-top {
     padding-top: 60px;
 }
@@ -1080,6 +1096,10 @@ p {
     display: inline-block;
 }
 
+.line-h-150 {
+    line-height: 150%;
+}
+
 .t-14 {
     font-family: Gojali-Regular;
     font-size: 14px;
@@ -1096,6 +1116,12 @@ p {
     font-family: Gojali-Regular;
     font-size: 18px;
     line-height: 25px;
+}
+
+.t-18-b {
+    font-family: Gojali-Bold;
+    font-size: 18px;
+    line-height: 125%;
 }
 
 .t-20 {
@@ -1120,6 +1146,7 @@ p {
 
 /* section heading */
 
+.cmn-btn-1,
 .cmn-btn {
     background-color: var(--primary-2);
     font-family: Gojali-Medium;
@@ -1139,6 +1166,13 @@ p {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+.cmn-btn-1:focus,
+.cmn-btn-1:hover {
+    background-color: #6130B6;
+    color: var(--white);
+}
+
 .cmn-btn:hover {
     background-color: #6130B6;
 }
@@ -1156,6 +1190,7 @@ p {
     margin-right: 8px;
 }
 
+
 /* .cmn-btn img {
     width: 20px;
     height: 20px;
@@ -1165,8 +1200,45 @@ p {
     font-size: 20px;
 }
 
-.pding-10 {
+.padding-10 {
     padding: 10px;
+}
+
+.pr-12 {
+    padding-right: 12px;
+}
+
+.pb-12 {
+    padding-bottom: 12px;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.pr-16 {
+    padding-right: 16px;
+}
+
+.mt-22 {
+    margin-top: 22px;
+}
+
+.my-22 {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.pt-22 {
+    padding-top: 22px;
 }
 
 .redius-12 {
@@ -1175,6 +1247,12 @@ p {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+}
+
+.hr-line {
+    height: 1px;
+    width: 100%;
+    background-color: #3F3359;
 }
 
 .font-regular {
@@ -1395,6 +1473,7 @@ p {
 .header-area .navbar .cmn-btn:hover {
     background-color: #6130B6;
 }
+
 .header-area .navbar .cmn-btn:focus {
     background-color: #4C258D;
     border: 1.5px solid #AE98D3;
@@ -1403,7 +1482,6 @@ p {
 .header-area .navbar .cmn-btn:visited {
     background-color: #F0EAFB;
 }
-
 
 .header-area .navbar-nav li {
     margin-right: 30px;
