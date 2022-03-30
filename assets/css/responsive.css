@@ -341,6 +341,9 @@
 /* Mobile Layout: 320px. */
 
 @media (max-width: 767px) {
+    .dashboard-wrapper .track-select .dropdown-menu.show {
+        transform: translate(-114px, 34px) !important;
+    }
     .partner-single a.image-1 img,
     .partner-single a.image-3 img {
         display: none;
