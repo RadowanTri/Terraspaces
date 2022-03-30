@@ -1267,7 +1267,9 @@ p {
 .h-48 {
     height: 48px !important;
 }
-
+.card-bg{
+    background-color: var(--card-color);
+}
 .cmn-bor-btn {
     background-color: transparent;
     font-family: Gojali-Regular;

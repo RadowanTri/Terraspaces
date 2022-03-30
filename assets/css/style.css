@@ -590,6 +590,52 @@ button.star-btn:hover:before {
 }
 
 
+/* .dasboard-wrapper */
+
+.dashboard-wrapper .search-f input {
+    font-family: Gojali-Regular;
+    font-size: 16px;
+    color: #AFAFAF;
+    height: 42px;
+    padding: 12px 16px;
+    background: #3F3359;
+    border-radius: 12px;
+    width: 271px;
+    max-width: 100%;
+}
+
+.dashboard-wrapper .search-f .cmn-btn {
+    height: 42px;
+    margin-left: 12px;
+}
+
+.dashboard-wrapper .watchlist-wrapper {
+    padding: 30px 20px 20px;
+    border-radius: 20px;
+}
+
+.dashboard-wrapper .watchlist-wrapper .single-watchlist {
+    margin-bottom: 30px;
+}
+
+.dashboard-wrapper .watchlist-wrapper .watch-btn {
+    margin-top: 227px;
+}
+
+.dashboard-wrapper .dash-cont {
+    display: flex;
+    align-items: center;
+    gap: 103px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.dashboard-wrapper .dash-cont .count-s .single-text {
+    display: flex;
+    align-items: center;
+}
+
+
 /* mint css*/
 
 .mint-area {
