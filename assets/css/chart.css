@@ -1,0 +1,43 @@
+rect.highcharts-background {
+    display: none;
+}
+
+.chart-bbb {
+    background: #3F3359 !important;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    max-height: 345px;
+}
+
+svg.highcharts-root {
+    height: 345px;
+}
+
+
+/* svg.highcharts-root {
+    height: 350px;
+} */
+
+text.highcharts-title {
+    display: none;
+}
+
+text.highcharts-subtitle {
+    display: none;
+}
+
+text.highcharts-axis-title {
+    display: none;
+}
+
+text.highcharts-credits {
+    display: none;
+}
+
+g.highcharts-legend.highcharts-no-tooltip {
+    display: none;
+}

@@ -4,6 +4,7 @@
         line-height: 100%;
     }
 }
+
 @media (min-width: 1199px) {
     .d-grid-5 {
         gap: 30px;
@@ -108,7 +109,6 @@
 
 @media (min-width: 320px) and (max-width: 991px) {
     /* font-size */
- 
     /* font-size */
     .section-heading {
         font-size: 35px;
@@ -156,6 +156,7 @@
     .hero-area .hero-title h1 {
         font-size: 34px;
     }
+    .pt-160,
     .home-page {
         padding-top: 100px;
     }
@@ -220,7 +221,6 @@
     .header-area .navbar {
         padding: 0px;
     }
-  
     .header-area .navbar-nav li {
         margin-right: 15px;
         margin-bottom: 15px;
@@ -287,18 +287,28 @@
         padding-top: 20px;
         padding-bottom: 15px;
     }
+    .dashboard-wrapper .dash-cont {
+        gap: 20px;
+    }
+    .char-c.mr-12 img {
+        width: 20px;
+        height: 20px;
+    }
+    .dashboard-wrapper .single-text .t-18-b {
+        font-size: 15px;
+    }
 }
 
 
 /* Mobile Layout: 320px. */
 
 @media (max-width: 767px) {
-       br {
-           display: none;
-       }
-         .header-area .navbar .cmn-btn {
-             margin-right: 18px;
-         }
+    br {
+        display: none;
+    }
+    .header-area .navbar .cmn-btn {
+        margin-right: 18px;
+    }
     .icons-f,
     .videos-icon {
         height: 35px;
@@ -313,12 +323,40 @@
     .partner-wrapper {
         padding-bottom: 150px;
     }
-     .f-row-reverse {
-         flex-direction: column-reverse;
-     }
-     .stak-img-abs img{
-         max-width: 75%;
-     }
+    .f-row-reverse {
+        flex-direction: column-reverse;
+    }
+    .stak-img-abs img {
+        max-width: 75%;
+    }
+    .stking-hero-area .count-parent {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 15px;
+        gap: 15px;
+    }
+    .stking-hero-area .count-parent .single-text::before {
+        content: "";
+        right: -12px;
+        height: 50px;
+        width: 1px;
+    }
+    .stking-hero-area .count-parent .single-text .t-20 {
+        font-size: 16px;
+    }
+    .stking-hero-area .count-parent {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+        gap: 15px;
+    }
+    .dashboard-wrapper {
+        margin-bottom: 100px;
+    }
+    .stking-page {
+        padding-bottom: 100px;
+    }
+    .dashboard-wrapper .watchlist-wrapper .watch-btn {
+        margin-top: 120px;
+    }
 }
 
 
@@ -331,7 +369,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-   
     .t-20 {
         font-size: 16px;
     }
@@ -373,6 +410,38 @@
     .stak-img-abs img {
         max-width: 85%;
     }
+    .t-card-wrapper .mb-60 {
+        margin-bottom: 40px;
+    }
+    .t-card-wrapper .row>* {
+        flex-shrink: 0;
+        width: 50%;
+        max-width: 50%;
+        padding-right: calc(var(--bs-gutter-x) * .3);
+        padding-left: calc(var(--bs-gutter-x) * .3);
+        margin-top: var(--bs-gutter-y);
+    }
+    .stake-wrapper .t-card-img .stake-img {
+        height: 150px;
+    }
+    .stake-wrapper .stake-bt .t-card-img .stake-img {
+        height: 86px;
+    }
+    .stking-hero-area .count-parent .count-s:nth-child(3) .single-text::before {
+        display: none;
+    }
+    .stking-hero-area .count-parent .count-s:last-child .single-text::before {
+        display: block;
+    }
+    .stake-wrapper .navs-area .nav-pills .nav-link {
+        padding: 16px 20px;
+    }
+    .dashboard-wrapper .dash-cont {
+        display: block;
+    }
+    .dashboard-wrapper .dash-cont .count-s .single-text {
+        margin-bottom: 15px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
@@ -388,5 +457,11 @@
     .footer-wrapper .copyright {
         display: block;
         text-align: center;
+    }
+    .t-card-wrapper .row>* {
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
     }
 }

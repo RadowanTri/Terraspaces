@@ -592,6 +592,10 @@ button.star-btn:hover:before {
 
 /* .dasboard-wrapper */
 
+.dashboard-wrapper {
+    margin-bottom: 225px;
+}
+
 .dashboard-wrapper .search-f input {
     font-family: Gojali-Regular;
     font-size: 16px;
@@ -633,6 +637,10 @@ button.star-btn:hover:before {
 .dashboard-wrapper .dash-cont .count-s .single-text {
     display: flex;
     align-items: center;
+}
+
+.dashboard-wrapper .dashboard-t {
+    gap: 15px;
 }
 
 
