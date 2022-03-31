@@ -682,6 +682,8 @@ button.star-btn:hover:before {
 .partner-single a.image-1 img,
 .partner-single a.image-3 img {
     width: 225px;
+       position: relative;
+       margin-top: 75px;
 }
 
 .partner-single .image-2 {
@@ -690,4 +692,6 @@ button.star-btn:hover:before {
 
 .partner-single .image-2 img {
     width: 277px;
+    position: relative;
+    margin-top: -35px;
 }
