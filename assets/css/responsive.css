@@ -344,12 +344,16 @@
     .dashboard-wrapper .track-select .dropdown-menu.show {
         transform: translate(-114px, 34px) !important;
     }
+     .partner-single a.image-2 img,
     .partner-single a.image-1 img,
     .partner-single a.image-3 img {
-        display: none;
+        width: 100px;
+    }
+    .partner-single .image-2 img {
+        margin-top: 25px;
     }
     .partner-single .image-2 {
-        margin: 0px 0px;
+        margin: 0px 15px;
     }
     br {
         display: none;
@@ -506,4 +510,11 @@
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
     }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+   .partner-single a.image-2 img,
+   .partner-single a.image-1 img,
+   .partner-single a.image-3 img {
+       width: 90px;
+   }
 }
