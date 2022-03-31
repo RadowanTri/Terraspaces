@@ -606,7 +606,7 @@ button.star-btn:hover:before {
     gap: 15px;
 }
 
-.dashboard-wrapper .chart-b img {
+.dashboard-wrapper .chart-b svg {
     width: 100%;
 }
 

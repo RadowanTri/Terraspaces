@@ -1,5 +1,5 @@
 @media (min-width: 1440px) {
-    .dashboard-wrapper .chart-b img {
+    .dashboard-wrapper .chart-b svg {
         height: 358px;
     }
 }
@@ -9,7 +9,7 @@
         font-size: 72px;
         line-height: 100%;
     }
-    .dashboard-wrapper .chart-b img {
+    .dashboard-wrapper .chart-b svg {
         height: 358px;
     }
 }
